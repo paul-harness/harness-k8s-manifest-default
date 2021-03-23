@@ -1,11 +1,8 @@
 name: harness-demo
 replicas: 1
 
-image: ${artifact.metadata.image}
-dockercfg: ${artifact.source.dockerconfig}
-
 createNamespace: true
-namespace: ${infra.kubernetes.namespace}
+namespace: <+infrastructure.namespace>
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
