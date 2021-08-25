@@ -1,4 +1,4 @@
-name: harness-demo1
+name: <+service.name>
 replicas: 1
 
 image: <+artifact.image>
